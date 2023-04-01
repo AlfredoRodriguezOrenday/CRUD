@@ -31,7 +31,7 @@ CREATE PROCEDURE Sp_TrabajadorEdad
 AS
 BEGIN
 
-SELECT Nombre, DATEDIFF(YEAR,FechaNacimiento,GETDATE()) as Edad  FROM Trabajador 
+SELECT Nombre, DATEDIFF(YEAR,FechaNacimiento,GETDATE()) as Edad  FROM Trabajador Where Estatus = 'Activo'
 END
 
 EXEC Sp_TrabajadorEdad
@@ -40,12 +40,10 @@ CREATE PROCEDURE Sp_TrabajadorFechaInicio
 AS
 BEGIN
 
-SELECT Nombre, DATEDIFF(DAY,FechaContratacion, GETDATE()) as DiasContratacion  FROM Trabajador 
+SELECT Nombre, DATEDIFF(DAY,FechaContratacion, GETDATE()) as DiasContratacion  FROM Trabajador Where Estatus = 'Activo'
 END
 
 EXEC Sp_TrabajadorFechaInicio
-
-
 
 CREATE PROCEDURE SP_SaveTrabajadorWithDepartamento
 @Nombre VARCHAR(50), 
