@@ -67,13 +67,11 @@ namespace CRUD.View
                 {
                     relacion.FkDepartamento = cbxClaveDepartamento.SelectedValue.ToString();
                     relacion.FkTrabajador = id;
-                MessageBox.Show(relacion.FkDepartamento + " relaciones si " + relacion.FkTrabajador);
                 }
                 else
                 {
                     relacion.FkDepartamento = "";
                 }
-            MessageBox.Show(relacion.FkDepartamento + " relaciones " + relacion.FkTrabajador);
             return relacion;
         }
         private string DateFormat(string DatesA)

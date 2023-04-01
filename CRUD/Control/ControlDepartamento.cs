@@ -22,7 +22,7 @@ namespace CRUD.Control
 
         public void Add(Departamento ObjDepartamento)
         {
-            Query = new SqlCommand("Insert Into Departamento Values(@Clave, @Nombre, @Estatus)");
+            Query = new SqlCommand("EXEC SP_SaveDepartamento @Clave, @Nombre, @Estatus");
             Query.Parameters.Add("@Clave", SqlDbType.VarChar).Value = ObjDepartamento.Clave;
             Query.Parameters.Add("@Nombre", SqlDbType.VarChar).Value = ObjDepartamento.Nombre;
             Query.Parameters.Add("@Estatus", SqlDbType.VarChar).Value = ObjDepartamento.Estatus;

@@ -107,6 +107,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DGVInformacion.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DGVInformacion.EnableHeadersVisualStyles = false;
             this.DGVInformacion.GridColor = System.Drawing.SystemColors.HotTrack;
             this.DGVInformacion.Location = new System.Drawing.Point(-4, 90);
             this.DGVInformacion.Name = "DGVInformacion";

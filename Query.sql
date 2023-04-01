@@ -108,9 +108,16 @@ AS
 BEGIN
 	UPDATE Trabajador SET Nombre = @Nombre, Apellidos = @Apellidos, FechaNacimiento = @FechaNacimiento, FechaContratacion = @FechaContratacion, Estatus = @Estatus WHERE IdTrabajador = @IdTrabajador;
 END
-SELECT T.*, R.FkDepartamento FROM Trabajador AS T, Relaciones AS R
-WHERE T.Estatus = 'Activo' and T.IdTrabajador = R.FkTrabajador
 
-SELECT T.*, R.FkDepartamento, D.Nombre FROM Trabajador AS T, Relaciones AS R, Departamento AS D WHERE T.Estatus = 'Activo' and T.IdTrabajador = R.FkTrabajador and D.Clave = R.FkDepartamento
-
+CREATE PROCEDURE SP_SaveDepartamento
+@Clave VARCHAR(50),
+@Nombre VARCHAR(50),
+@Estatus VARCHAR(50)
+AS
+BEGIN
+	IF NOT EXISTS( SELECT @Clave FROM Departamento WHERE Clave = @Clave)
+	BEGIN
+		INSERT INTO Departamento VALUES(@Clave, @Nombre, @Estatus)
+	END
+END
 
