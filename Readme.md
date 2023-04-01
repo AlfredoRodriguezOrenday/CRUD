@@ -42,7 +42,7 @@ In this window show buttons, this buttons direct to another windows.
 
 En esta bentana se muestran botones, que dirigen a otras ventanas. 
 
-![Home-Inicio](./CRUD/Img/Homes.png)
+![Home-Inicio](./CRUD/Img/Homes.PNG)
 
 ### Worker || Trabajador
 
@@ -50,7 +50,7 @@ In this window show a table where can see different data, in this window can do 
 
 En esta ventana se muestra una tabla donde se pueden ver defrente informacion, en esta ventana se puede hacer diferentes acciones: **Crear**, **Leer**, **Actualizar** y **Eliminar**
 
-![Worker-Trabajador](./CRUD/Img/Workers.png)
+![Worker-Trabajador](./CRUD/Img/Workers.PNG)
 
 ### Departament || Departamento
 
