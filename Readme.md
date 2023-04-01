@@ -68,8 +68,8 @@ En esta ventana se muestra una tabla con informacion especifica como , cuantos q
 
 ![Information-Informacion](./CRUD/Img/Information.PNG)
 
-## **About me** || **Acerca de mi**
+## :nerd_face: **About me** || **Acerca de mi** :nerd_face:
 
-> :wink: Do you want contact me? Check my profile in [LinkedIn](https://www.linkedin.com/in/alfredo-rodríguez-orenday-73a14a215/ "Alfredo Rdz O")  
+> :wink: Do you want contact me? :eyes: Check my profile in :point_right: [LinkedIn](https://www.linkedin.com/in/alfredo-rodríguez-orenday-73a14a215/ "Alfredo Rdz O")  
 
-> :wink: ¿Quieres contactarme? Checa mi perfil en [LinkedIn](https://www.linkedin.com/in/alfredo-rodríguez-orenday-73a14a215/ "Alfredo Rdz O")  
+> :wink: ¿Quieres contactarme? :eyes: Checa mi perfil en :point_right: [LinkedIn](https://www.linkedin.com/in/alfredo-rodríguez-orenday-73a14a215/ "Alfredo Rdz O")  
